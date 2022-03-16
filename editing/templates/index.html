@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>DRAFT Galaxiator Minigame 1</title>
+    <style>
+        body{
+            background: #00776f;
+            color: #fff;
+        }
+        .content{
+            width: 800px;
+            margin: 0 auto;
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+            font-size: 14pt;
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn{
+            text-align: center;
+            display: block;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            padding: 12px 18px;
+            margin: 6px auto;
+            box-sizing: border-box;
+            background: #e3d947;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #000;
+            transition: background 0.1s ease-in-out;
+        }
+        .btn:hover{
+            background: #ff8f00;
+        }
+        .edit{
+            text-align: center;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            padding: 8px 12px;
+            margin: 6px auto;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background: #f00;
+            color: #fff;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        textarea{
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+            font-size: 12pt;
+            padding: 8px;
+            line-height: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <br>
+            <a href="javascript:history.back();">&lt; back</a><br>
+            <a href="/play/c">&lt; start again</a>
+        </div>
+        {{ html }}
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+/* 6c2778, e3d947, ff8f00 */
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Syne Mono', monospace;
+    font-size: 16pt;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+    background: #000;
+}
+
+body {
+    background: url("/assets/bg2.jpg") no-repeat top center;
+    background-size: cover;
+}
+
+input, select, button{
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    padding: 10px 8px;
+    font-family: 'Syne Mono', monospace;
+    outline: none;
+    border: 0;
+    margin: 12px;
+    width: calc(100% - 24px);
+    display: block;
+    box-shadow: black 2px 2px 4px;
+}
+
+input, select{
+    font-size: 12pt;
+}
+
+button{
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+#flash-container{
+    position: fixed;
+    bottom: 0;
+    padding: 0 64px 64px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.flash-box{
+    color: #000;
+    background: #e3d947;
+    border-radius: 3px;
+    padding: 16px 12px;
+    min-width: 160px;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: black 2px 2px 4px;
+    margin: 18pt auto 0;
+    font-size: 12pt;
+}
+
+h1{
+    color: #e3d947;
+    text-shadow: #000 2px 2px 4px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.back{
+    color: #e3d947;
+    text-decoration: none;
+    padding: 12pt;
+    font-weight: bold;
+    text-shadow: #000 2px 2px 4px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e3d947;
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,0);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+}
+
+.blink{
+    animation: fadeIn 0.3s infinite alternate;
+}
+
+.logo{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.back{
+    font-weight: bold;
+    text-align: left;
+    font-size: 80%;
+    margin: 72px 0 36px;
+}
+
+.sharer{
+    padding: 8px 16px !important;
+    text-decoration: none !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+    text-shadow: none !important;
+    width: calc(100% - 24px) !important;
+    text-align: center !important;
+    margin: 4px 12px !important;
+    box-sizing: border-box !important;
+}
+
+.sharer img{
+    display: inline-block !important;
+    width: 30px !important;
+    vertical-align:middle !important;
+}
+
+.twitter{
+    background: #00acee !important;
+    color: white !important;
+}
